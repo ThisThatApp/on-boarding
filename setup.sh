@@ -109,7 +109,7 @@ command -v brew >/dev/null 2>&1 || {
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
-export PATH="/opt/homebrew/bin:$PATH" >> ~/.zshrc
+echo export PATH="/opt/homebrew/bin:$PATH" >> ~/.zshrc
 
 command -v zsh >/dev/null 2>&1 || {
     printf "\nInstalling ZSH...\n"
